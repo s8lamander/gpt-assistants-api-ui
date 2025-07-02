@@ -21,8 +21,7 @@ def str_to_bool(str_input):
 
 st.set_page_config(
     page_title="Get Better at Flatter Chatbot",
-    page_icon="robot",
-    layout="wide",
+    page_icon="Robot Face",
 )
 
 # Load environment variables
