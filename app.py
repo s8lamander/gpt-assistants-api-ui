@@ -19,6 +19,11 @@ def str_to_bool(str_input):
         return False
     return str_input.lower() == "true"
 
+st.set_page_config(
+    page_title="Get Better at Flatter Chatbot",
+    page_icon="robot",
+    layout="wide",
+)
 
 # Load environment variables
 openai_api_key = os.environ.get("OPENAI_API_KEY")
