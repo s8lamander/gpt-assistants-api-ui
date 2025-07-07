@@ -20,7 +20,7 @@ def str_to_bool(str_input):
     return str_input.lower() == "true"
 
 st.set_page_config(
-    page_title="Get Better at Flatter Chatbot",
+    #page_title="Get Better at Flatter Chatbot",
     page_icon="🤖",
 )
 
