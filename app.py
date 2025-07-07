@@ -276,7 +276,7 @@ def load_chat_screen(assistant_id, assistant_title):
     
     st.title(assistant_title if assistant_title else "")
 
-    st.subheader("This is a chatbot to talk about Prof. Markus Reitzig's book \"Get Better at Flatter")
+    st.subheader("This is a chatbot to talk about Prof. Markus Reitzig's book \"Get Better at Flatter\"")
     
     user_msg = st.chat_input(
         "Message", on_submit=disable_form, disabled=st.session_state.in_progress
