@@ -19,12 +19,7 @@ def str_to_bool(str_input):
         return False
     return str_input.lower() == "true"
 
-st.set_page_config(
-    page_title="Get Better at Flatter Chatbot",
-    page_icon="🤖",
-)
 
-st.header("This is a chatbot to talk about Prof. Markus Reitzig's book Get Better at Flatter")
 
 # Load environment variables
 openai_api_key = os.environ.get("OPENAI_API_KEY")
@@ -274,7 +269,14 @@ def load_chat_screen(assistant_id, assistant_title):
     else:
         uploaded_file = None
 
-    #st.title(assistant_title if assistant_title else "")
+st.set_page_config(
+    #page_title="Get Better at Flatter Chatbot",
+    page_icon="🤖",
+)
+
+st.subheader("This is a chatbot to talk about Prof. Markus Reitzig's book Get Better at Flatter")
+    
+    st.title(assistant_title if assistant_title else "")
     user_msg = st.chat_input(
         "Message", on_submit=disable_form, disabled=st.session_state.in_progress
     )
