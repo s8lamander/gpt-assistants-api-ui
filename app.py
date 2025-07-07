@@ -24,7 +24,7 @@ st.set_page_config(
     page_icon="🤖",
 )
 
-st.title("Demo: Get Better at Flatter Chatbot")
+st.subheader("This is a chatbot to talk about Prof. Markus Reitzig's book "Get Better at Flatter")
 
 # Load environment variables
 openai_api_key = os.environ.get("OPENAI_API_KEY")
