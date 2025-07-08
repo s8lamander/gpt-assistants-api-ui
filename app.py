@@ -270,7 +270,7 @@ def load_chat_screen(assistant_id, assistant_title):
         uploaded_file = None
 
     st.set_page_config(
-        #page_title="Get Better at Flatter Chatbot",
+        page_title="Get Better at Flatter Chatbot",
         page_icon="🤖",
     )
     
